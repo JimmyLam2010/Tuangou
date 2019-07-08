@@ -67,14 +67,19 @@ select{
             flex-basis: 25%;
             text-align: center;
 
-            img{
-                width: 0.73rem;
-                height: 0.73rem;
-            }
+            a{
+                text-decoration: none;
+                
+                img{
+                    width: 0.73rem;
+                    height: 0.73rem;
+                }
 
-            p{
-                margin-bottom: 0;
+                p{
+                    margin-bottom: 0;
+                }
             }
+            
         }
     }
 }
