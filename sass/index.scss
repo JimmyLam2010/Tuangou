@@ -5,10 +5,149 @@
     padding-bottom: 0.1rem;
 }
 
-.banner{
-    img{
-        width: 100%;
-        height: 2.86rem;
+.content{
+    .banner{
+        img{
+            width: 100%;
+            height:100%;
+            background-size: cover;
+        }
     }
+
+    .section{
+        padding-top: 0.35rem;
+
+        .title{
+            font-size: 0.6rem;
+            line-height: 1.16rem;
+            padding-left: 1.5rem;
+            position: relative;
+
+            a{
+                font-size: 0.48rem;
+                padding-right: 0.7rem;
+                float: right;
+                position: relative;
+                color: #333333;
+                text-decoration: none;
+            }
+
+            a::after{
+                content: '';
+                display: inline-block;
+                width: 0.56rem;
+                height: 0.54rem;
+                background-image: url("../images/more.png");
+                background-size: cover;
+                position: absolute;
+                top: 0.32rem;
+                right: 0;
+            }
+        }
+
+        .title::before{
+            content: '';
+            display: inline-block;
+            background-size: cover;
+            margin-right: 0.08rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+
+    .promotion{
+        .title::before{
+            width: 1.18rem;
+            height: 1.12rem;
+            background-image: url("../images/promotion.png");
+        }
+
+        .promotion-list{
+            margin-top: 0.18rem;
+
+            ul{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+                li{
+                    flex-basis: 40%;
+                    margin-bottom: 0.3rem;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .favourite{
+        .title::before{
+            width: 1.3rem;
+            height: 1.1rem;
+            background-image: url("../images/likes.png");
+        }
+
+        .favourite-list{
+            margin-top: 0.34rem;
+            
+            ul{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 0;
     
+                li{
+                    flex-basis: 100%;
+                    position: relative;
+                    margin-bottom: 0.3rem;
+                    
+                    img{
+                        width: 4.2rem;
+                        height: 2.8rem;
+                        margin-right: 0.2rem;
+                    }
+    
+                    .store-info{
+                        display: inline-block;
+                        transform: translateY(0.6rem);
+                           
+                        p:first-child{
+                            font-size: 0.3rem;
+                            margin-bottom: 0.2rem;
+                        }
+    
+                        p:nth-child(2){
+                            font-size: 0.22rem;
+                            margin-bottom: 0.22rem;
+                        }
+                        
+                        p:last-child{
+                            font-size: 0.32rem;
+                            color: #ff9344;
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    .distance{
+                        font-size: 0.3rem;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+
+                    .sold{
+                        font-size: 0.3rem;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
 }
