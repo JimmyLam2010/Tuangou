@@ -1,0 +1,85 @@
+@import "common.scss";
+
+.content{
+    .category{
+        padding-top: 0.4rem;
+
+        ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin-bottom: 0;
+
+            li{
+                flex-basis: 25%;
+                text-align: center;
+
+                img{
+                    width: 1.48rem;
+                    height: 1.48rem;
+                }
+
+                p{
+                    margin-top: 0.1rem;
+                    margin-bottom: 0;
+                    font-size: 0.36rem;
+                }
+            }
+        }
+    }
+    .pagination{
+        margin-top: 0.15rem;
+
+        ul{
+            display: block;
+            margin: 0 auto;
+
+            li{
+                display: inline-block;
+                width: 0.3rem;
+                height: 0.3rem;
+                background-color: #ff9344;
+                border-radius: 50%;
+                opacity: 0.3;
+            }
+
+            li:first-child{
+                opacity: 1;
+            }
+
+            li:hover{
+                opacity: 1;
+            }
+        }
+    }
+
+    .food{
+        margin-top: 0.7rem;
+
+        .title::before{
+            width: 1.34rem;
+            height: 1.05rem;
+            background-image: url("../images/food_icon.png");
+        }
+    }
+
+    .sport{
+        margin-top: 0.7rem;
+
+        .title::before{
+            width: 0.98rem;
+            height: 1.18rem;
+            background-image: url("../images/sport_icon.png");
+        }
+    }
+
+    .movie{
+        margin-top: 0.7rem;
+        
+        .title::before{
+            width: 1.06rem;
+            height: 1.06rem;
+            background-image: url("../images/movie_icon.png");
+        }
+    }
+}

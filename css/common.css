@@ -14,9 +14,24 @@
     width: 100%;
     height: 0.7rem; }
   .header .city {
-    margin-top: 0.4rem;
     width: 100%;
-    height: 0.7rem; }
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem; }
+  .header .back {
+    font-size: 0.52rem;
+    line-height: 0.52rem;
+    border: 2px solid #ff9344;
+    border-radius: 0.3rem;
+    text-align: center;
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem; }
+    .header .back a {
+      text-decoration: none;
+      color: #333333; }
+  .header .title {
+    font-size: 0.36rem;
+    text-align: center;
+    margin-top: 0.2rem; }
 
 input[type="search"] {
   border: 0.02rem solid #ff9344;
@@ -35,7 +50,54 @@ select {
   outline: none; }
 
 .content {
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  width: 100%; }
+  .content .section {
+    padding-top: 0.35rem; }
+    .content .section .title {
+      font-size: 0.6rem;
+      line-height: 1.16rem;
+      padding-left: 1.5rem;
+      position: relative; }
+      .content .section .title a {
+        font-size: 0.48rem;
+        padding-right: 0.7rem;
+        float: right;
+        position: relative;
+        color: #333333;
+        text-decoration: none; }
+      .content .section .title a::after {
+        content: '';
+        display: inline-block;
+        width: 0.56rem;
+        height: 0.54rem;
+        background-image: url("../images/more.png");
+        background-size: cover;
+        position: absolute;
+        top: 0.32rem;
+        right: 0; }
+    .content .section .title::before {
+      content: '';
+      display: inline-block;
+      background-size: cover;
+      margin-right: 0.08rem;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .content .section .list {
+      margin-top: 0.38rem; }
+      .content .section .list ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-bottom: 0; }
+        .content .section .list ul li {
+          flex-basis: 25%;
+          text-align: center; }
+          .content .section .list ul li img {
+            width: 2rem;
+            height: 2rem; }
 
 .footer {
   padding-top: 0.15rem;
