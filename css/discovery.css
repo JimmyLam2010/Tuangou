@@ -124,56 +124,76 @@ select {
         .footer ul li a p {
           margin-bottom: 0; }
 
-.content .category {
-  padding-top: 0.4rem; }
-  .content .category ul {
+.content .search {
+  padding-top: 0.3rem;
+  text-align: center; }
+  .content .search p {
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    font-size: 0.52rem; }
+  .content .search .search-example {
+    width: 80%;
+    margin: 0.1rem auto 0; }
+    .content .search .search-example ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 0; }
+      .content .search .search-example ul li {
+        flex-basis: 24%;
+        font-size: 0.4rem;
+        background-color: #dcdcdc;
+        margin-bottom: 0.05rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.15rem; }
+.content .hot .title::before {
+  width: 0.62rem;
+  height: 0.94rem;
+  background-image: url("../images/hot.png");
+  left: 0.2rem; }
+.content .hot .hot-list {
+  position: relative;
+  height: 4rem; }
+  .content .hot .hot-list .hot-1 {
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .content .hot .hot-list .hot-2 {
+    width: 60%;
+    height: 45%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .content .hot .hot-list .hot-3 {
+    width: 27.5%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 40%; }
+  .content .hot .hot-list .hot-4 {
+    width: 27.5%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+.content .recommendation .title::before {
+  width: 0.81rem;
+  height: 0.78rem;
+  background-image: url("../images/recommendation.png");
+  left: 0.2rem; }
+.content .recommendation .recommendation-list {
+  margin-top: 0.5rem; }
+  .content .recommendation .recommendation-list ul {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    margin-bottom: 0; }
-    .content .category ul li {
-      flex-basis: 25%;
-      text-align: center; }
-      .content .category ul li img {
-        width: 1.48rem;
-        height: 1.48rem; }
-      .content .category ul li p {
-        margin-top: 0.1rem;
-        margin-bottom: 0;
-        font-size: 0.36rem; }
-.content .pagination {
-  margin-top: 0.15rem; }
-  .content .pagination ul {
-    display: block;
-    margin: 0 auto; }
-    .content .pagination ul li {
-      display: inline-block;
-      width: 0.3rem;
-      height: 0.3rem;
-      background-color: #ff9344;
-      border-radius: 50%;
-      opacity: 0.3; }
-    .content .pagination ul li:first-child {
-      opacity: 1; }
-    .content .pagination ul li:hover {
-      opacity: 1; }
-.content .food {
-  margin-top: 0.7rem; }
-  .content .food .title::before {
-    width: 1.34rem;
-    height: 1.05rem;
-    background-image: url("../images/food_icon.png"); }
-.content .sport {
-  margin-top: 0.7rem; }
-  .content .sport .title::before {
-    width: 0.98rem;
-    height: 1.18rem;
-    background-image: url("../images/sport_icon.png"); }
-.content .movie {
-  margin-top: 0.7rem; }
-  .content .movie .title::before {
-    width: 1.06rem;
-    height: 1.06rem;
-    background-image: url("../images/movie_icon.png"); }
+    justify-content: space-between; }
+    .content .recommendation .recommendation-list ul li {
+      flex-basis: 30%; }
+      .content .recommendation .recommendation-list ul li img {
+        width: 100%;
+        height: 100%; }
 
-/*# sourceMappingURL=category.css.map */
+/*# sourceMappingURL=discovery.css.map */

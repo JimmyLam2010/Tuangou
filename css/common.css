@@ -38,7 +38,8 @@ input[type="search"] {
   border-radius: 0.5rem;
   background: url("../images/search.png") right 0.18rem center no-repeat;
   background-size: 0.36rem 0.33rem;
-  outline: none; }
+  outline: none;
+  padding-left: 0.25rem; }
 
 select {
   appearance: none;
